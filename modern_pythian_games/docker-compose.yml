@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+    fast-api:
+        build:
+            context: ./
+            dockerfile: ./Dockerfile
+
+
+        container_name: fast_api_movies
+        ports:
+            - 8000:8000
+        network_mode: bridge
